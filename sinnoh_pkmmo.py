@@ -3,6 +3,11 @@ import time
 import random
 
 kb = Controller()
+# TODO:
+# Once every ... 10 runs ? A reset of the bot, so if it crashed or something, it will restart
+# Handle exception with opencv (shiny hunting?)
+# Implementing a way to detect if the bot is stuck (if it doesn't move for 5 minutes, restart the bot)
+# Implementing an AI ? With a reward system.
 
 time.sleep(3)
 #Please run
@@ -83,7 +88,7 @@ def main():
         time.sleep(0.2)
         run_2_cave()
         for i in range(4):
-            time.sleep(3)
+            time.sleep(5)
             use_move()
             time.sleep(1)
             encounter()
